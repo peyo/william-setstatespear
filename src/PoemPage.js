@@ -1,18 +1,14 @@
-import React from 'react'
-import POEMS from './poems'
+import React from "react";
+import POEMS from "./poems";
 
 export default function PoemPage(props) {
-  const poem = POEMS.find(p =>
-    p.id === props.match.params.poemId
-  )
+  const poem = POEMS.find(p => p.id === props.match.params.poemId);
   return (
-    <article className='Poem'>
+    <article className="Poem">
       <h2>{poem.title}</h2>
       {poem.content.map((p, i) =>
-        (p === '')
-          ? <br key={i} />
-          : <p key={i}>{p}</p>
+        p === "" ? <br key={i} /> : <p key={i}>{p}</p>
       )}
     </article>
-  )
+  );
 }
