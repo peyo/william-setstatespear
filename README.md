@@ -1,3 +1,11 @@
+# Website functions
+
+There will be a home page, /, that displays a list of poems.
+
+Each poem in the list is a link to a page for that poem.
+
+When viewing a poem, the URL path should be /poem/[poem-id].
+
 # William Setstatespear
 
 This is a sample project used for education of React Router.
